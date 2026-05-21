@@ -327,7 +327,7 @@ export default function NeuralSphere3D() {
           <span>RE-CENTER</span>
         </button>
 
-        <div style={styles.speedControlRow}>
+        <div style={styles.speedControlRow} className="speed-control-row">
           <span style={styles.speedLabel}>SPEED:</span>
           {[0.5, 1, 2].map((spd) => (
             <button
@@ -441,9 +441,6 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '0.25rem',
-    '@media (max-width: 500px)': {
-      marginLeft: '0',
-    }
   },
   speedLabel: {
     fontFamily: 'var(--font-mono)',

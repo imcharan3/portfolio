@@ -382,3 +382,107 @@ a {
   }
 }
 
+/* Comprehensive Mobile & Tablet Responsiveness Overrides */
+
+/* Tablet & Smaller Laptops */
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .lab-layout {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .interactive-area {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem !important;
+  }
+
+  /* Navigation Bar Adjustments */
+  header.glass-panel {
+    top: 0.75rem !important;
+    width: calc(100% - 1.5rem) !important;
+    padding: 0 1rem !important;
+    height: 54px !important;
+  }
+  
+  .header-nav {
+    display: none !important; /* Hide links for a cleaner, compact mobile aesthetic */
+  }
+  
+  .logo-block {
+    font-size: 0.95rem !important;
+  }
+
+  /* Section Spacing & Headers */
+  section {
+    padding: 3.5rem 0 1.5rem !important;
+  }
+  
+  /* Hero Typographic Scaling */
+  #hero h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  #hero p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Hero Action Buttons */
+  .hero-actions {
+    gap: 1rem !important;
+    margin-bottom: 2rem !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .hero-actions > a {
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+  }
+
+  /* Console Profile Panel */
+  .about-card-body {
+    padding: 1.25rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* NeuralSphere Speed Control Row */
+  .speed-control-row {
+    margin-left: 0 !important;
+    margin-top: 0.5rem !important;
+  }
+}
+
+/* Extra Small Viewports (e.g. iPhone SE, 320px) */
+@media (max-width: 500px) {
+  .telemetry-split {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  canvas {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+

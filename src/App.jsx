@@ -63,12 +63,12 @@ export default function App() {
 
       {/* Modern High-tech Navigation Bar */}
       <header className="glass-panel" style={styles.header}>
-        <div style={styles.logoBlock}>
+        <div style={styles.logoBlock} className="logo-block">
           <span style={styles.logoActiveIcon}>⚡</span>
           <span style={styles.logoText}>ADISHTI</span>
           <span style={styles.logoCommand}>:~$</span>
         </div>
-        <nav style={styles.nav}>
+        <nav style={styles.nav} className="header-nav">
           <a href="#about" style={styles.navLink}>_about</a>
           <a href="#experience" style={styles.navLink}>_experience</a>
           <a href="#projects" style={styles.navLink}>_projects</a>
@@ -109,7 +109,7 @@ export default function App() {
             </p>
 
             {/* CTAs */}
-            <div style={styles.heroActions}>
+            <div style={styles.heroActions} className="hero-actions">
               <a href="#projects" className="btn-glow" style={{ textDecoration: 'none' }}>
                 <Cpu size={16} />
                 <span>Explore Models</span>
@@ -145,7 +145,7 @@ export default function App() {
             <h2 style={styles.sectionTitle}>Neural Profile</h2>
           </div>
           
-          <div style={styles.profileGrid}>
+          <div style={styles.profileGrid} className="profile-grid">
             <motion.div
               className="glass-panel"
               style={styles.aboutCard}
@@ -161,7 +161,7 @@ export default function App() {
                 </div>
                 <span style={styles.windowTitle}>system_core.info</span>
               </div>
-              <div style={styles.aboutCardBody}>
+              <div style={styles.aboutCardBody} className="about-card-body">
                 <div style={styles.consoleLine}><span style={styles.lbl}>OPERATOR:</span> Adishti Charan Teja</div>
                 <div style={styles.consoleLine}><span style={styles.lbl}>B.TECH:</span> Computer Science & Engineering</div>
                 <div style={styles.consoleLine}><span style={styles.lbl}>FOCUS:</span> Real-time Deep Learning & NLP APIs</div>
@@ -301,9 +301,6 @@ const styles = {
   nav: {
     display: 'flex',
     gap: '1.5rem',
-    '@media (max-width: 600px)': {
-      display: 'none', // Simple responsive clean UI
-    }
   },
   navLink: {
     fontFamily: 'var(--font-mono)',
@@ -367,9 +364,6 @@ const styles = {
     letterSpacing: '-0.03em',
     marginBottom: '1.5rem',
     color: '#fff',
-    '@media (max-width: 768px)': {
-      fontSize: '2.75rem',
-    }
   },
   typingBox: {
     display: 'inline-flex',
@@ -399,9 +393,6 @@ const styles = {
     maxWidth: '650px',
     marginBottom: '2.5rem',
     textAlign: 'center',
-    '@media (max-width: 768px)': {
-      fontSize: '1rem',
-    }
   },
   heroActions: {
     display: 'flex',
@@ -452,9 +443,6 @@ const styles = {
     gridTemplateColumns: '5fr 7fr',
     gap: '3rem',
     alignItems: 'start',
-    '@media (max-width: 900px)': {
-      gridTemplateColumns: '1fr',
-    }
   },
   aboutCard: {
     overflow: 'hidden',

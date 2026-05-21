@@ -878,9 +878,9 @@ export default function EmotionValenceWheel() {
         </div>
       </div>
 
-      <div style={styles.labLayout}>
+      <div style={styles.labLayout} className="lab-layout">
         {/* Left Column: Input and Parsed Tokens */}
-        <div style={styles.interactiveArea}>
+        <div style={styles.interactiveArea} className="interactive-area">
           <span style={styles.label}>INPUT TEXT STREAM FOR LEXICAL EVALUATION:</span>
           <textarea
             value={inputText}
@@ -955,7 +955,7 @@ export default function EmotionValenceWheel() {
               <Activity size={12} color="#10b981" style={{ animation: 'pulse 1.5s infinite' }} />
             </div>
             
-            <div style={styles.telemetrySplit}>
+            <div style={styles.telemetrySplit} className="telemetry-split">
               {/* Left Side: Dominant Badge */}
               <div style={styles.dominantCol}>
                 <span style={styles.telemetryLabel}>DOMINANT_VECTOR</span>
@@ -1037,9 +1037,6 @@ const styles = {
     display: 'grid',
     gridTemplateColumns: '5fr 7fr',
     alignItems: 'stretch',
-    '@media (max-width: 900px)': {
-      gridTemplateColumns: '1fr',
-    }
   },
   interactiveArea: {
     padding: '1.25rem',
@@ -1048,10 +1045,6 @@ const styles = {
     flexDirection: 'column',
     gap: '0.75rem',
     backgroundColor: 'rgba(0,0,0,0.1)',
-    '@media (max-width: 900px)': {
-      borderRight: 'none',
-      borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
-    }
   },
   label: {
     fontFamily: 'var(--font-mono)',
@@ -1166,9 +1159,6 @@ const styles = {
     gridTemplateColumns: '3fr 7fr',
     gap: '1rem',
     alignItems: 'center',
-    '@media (max-width: 500px)': {
-      gridTemplateColumns: '1fr',
-    }
   },
   dominantCol: {
     display: 'flex',

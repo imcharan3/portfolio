@@ -215,9 +215,9 @@ export default function NLPTokenizerVisualizer() {
         <span style={styles.statusBadge}>STABLE_RUN_200</span>
       </div>
 
-      <div style={styles.labLayout}>
+      <div style={styles.labLayout} className="lab-layout">
         {/* Left column: Text Input and token list */}
-        <div style={styles.interactiveArea}>
+        <div style={styles.interactiveArea} className="interactive-area">
           <span style={styles.label}>ENTER SENTENCE FOR PARSING:</span>
           <textarea
             value={inputText}
@@ -323,9 +323,6 @@ const styles = {
     display: 'grid',
     gridTemplateColumns: '5fr 7fr',
     alignItems: 'stretch',
-    '@media (max-width: 850px)': {
-      gridTemplateColumns: '1fr',
-    }
   },
   interactiveArea: {
     padding: '1.25rem',
@@ -334,10 +331,6 @@ const styles = {
     flexDirection: 'column',
     gap: '0.75rem',
     backgroundColor: 'rgba(0,0,0,0.1)',
-    '@media (max-width: 850px)': {
-      borderRight: 'none',
-      borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
-    }
   },
   label: {
     fontFamily: 'var(--font-mono)',

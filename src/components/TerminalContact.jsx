@@ -163,7 +163,7 @@ export default function TerminalContact() {
         <p style={styles.subtitle}>Execute shell queries or broadcast a telemetry message directly into the network.</p>
       </div>
 
-      <div style={styles.grid}>
+      <div style={styles.grid} className="contact-grid">
         {/* Terminal Section */}
         <div 
           className="glass-panel scanline" 
@@ -350,9 +350,6 @@ const styles = {
     gridTemplateColumns: '7fr 5fr',
     gap: '2.5rem',
     alignItems: 'stretch',
-    '@media (max-width: 900px)': {
-      gridTemplateColumns: '1fr',
-    }
   },
   terminalContainer: {
     display: 'flex',
