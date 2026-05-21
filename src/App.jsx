@@ -9,6 +9,7 @@ import CertTicker from './components/CertTicker';
 import TerminalContact from './components/TerminalContact';
 import NeuralSphere3D from './components/NeuralSphere3D';
 import NLPTokenizerVisualizer from './components/NLPTokenizerVisualizer';
+import EmotionValenceWheel from './components/EmotionValenceWheel';
 
 
 const TYPING_PHRASES = [
@@ -214,6 +215,9 @@ export default function App() {
           <div className="labs-grid">
             <NeuralSphere3D />
             <NLPTokenizerVisualizer />
+            <div style={{ gridColumn: '1 / -1' }}>
+              <EmotionValenceWheel />
+            </div>
           </div>
         </section>
 
